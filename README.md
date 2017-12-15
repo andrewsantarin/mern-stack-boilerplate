@@ -21,15 +21,22 @@ git clone https://github.com/andrewsantarin/mern-stack-app.git your-app-name-her
 
 **npm**
 ```sh
-cd your-app-name-here && npm install  # Installs server dependencies
-cd client && npm install              # Installs client dependencies
+# Browse to your-app-name-here's root path, then install the server dependencies.
+cd your-app-name-here
+npm install
+
+# Browse to your-app-name-here/client, then install the client dependencies.
+cd client
+npm install              # Installs client dependencies
+
+# Browse back to the root path
 cd ..                                 # Browse back to root path
 ```
 
 **yarn**
 ```sh
 cd your-app-name-here && yarn  # Installs server dependencies
-cd client && npm yarn          # Installs client dependencies
+cd client && yarn              # Installs client dependencies
 cd ..                          # Browse back to root path
 ```
 
