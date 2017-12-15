@@ -27,17 +27,24 @@ npm install
 
 # Browse to your-app-name-here/client, then install the client dependencies.
 cd client
-npm install              # Installs client dependencies
+npm install
 
 # Browse back to the root path
-cd ..                                 # Browse back to root path
+cd ..
 ```
 
 **yarn**
 ```sh
-cd your-app-name-here && yarn  # Installs server dependencies
-cd client && yarn              # Installs client dependencies
-cd ..                          # Browse back to root path
+# Browse to your-app-name-here's root path, then install the server dependencies.
+cd your-app-name-here
+yarn
+
+# Browse to your-app-name-here/client, then install the client dependencies.
+cd client
+yarn
+
+# Browse back to the root path
+cd ..
 ```
 
 3. Run the app.
