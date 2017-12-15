@@ -1,0 +1,28 @@
+{
+  "name": "cra-eg-mern",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run start-prod",
+    "start-server": "cross-env SECRET=STARWARS nodemon server/server.js",
+    "start-client": "cd client && cross-env REACT_APP_SECRET=STARWARS npm start && cd ..",
+    "start-prod": "concurrently --kill-others \"npm run start-server\" \"npm run start-client\""
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "mongoose": "^4.13.7",
+    "morgan": "~1.9.0",
+    "node-sass-middleware": "0.9.8",
+    "pug": "2.0.0-beta11",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "cross-env": "^5.1.1",
+    "nodemon": "^1.12.7"
+  }
+}
