@@ -4,7 +4,9 @@
  * Module dependencies.
  */
 
-const app = require('./api');
+const db = require('./db');     // Database connection to MongoDB
+const api = require('./api');   // Express REST API
+const ws = require('./ws');     // Socket.IO WebSockets/AJAX long-polling instance
 const debug = require('debug')('cra-eg-mern:server');
 const http = require('http');
 
@@ -13,13 +15,15 @@ const http = require('http');
  */
 
 const port = normalizePort(process.env.PORT || '4000');
-app.set('port', port);
+api.set('port', port);
+
+console.log('Express REST API listening on port', port);
 
 /**
  * Create HTTP server.
  */
 
-const server = http.createServer(app);
+const server = http.createServer(api);
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -28,6 +32,12 @@ const server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
+
+
+const SOCKET_PORT = process.env.SOCKET_PORT || '5000';
+ws.listen(SOCKET_PORT);
+
+console.log('Socket.IO WebSockets listening on port', SOCKET_PORT);
 
 /**
  * Normalize a port into a number, string, or false.
