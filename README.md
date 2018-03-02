@@ -1,4 +1,4 @@
-# mern-stack-app-boilerplate
+# mern-stack-boilerplate
 MERN app scaffolded with `create-react-app` and `express-generator` and heavily modified for domain-driven design.
 
 ## Premise
@@ -12,9 +12,9 @@ I figured using the two scaffolding tools would cut me some slack.
 This is, by no means, expected to be a solid build.
 
 ## Download, Install, Run
-1. Clone or this repository. Or [download and unzip it](https://github.com/andrewsantarin/mern-stack-app-boilerplate/archive/master.zip).
+1. Clone or this repository. Or [download and unzip it](https://github.com/andrewsantarin/mern-stack-boilerplate/archive/master.zip).
 ```sh
-git clone https://github.com/andrewsantarin/mern-stack-app-boilerplate.git your-app-name-here
+git clone https://github.com/andrewsantarin/mern-stack-boilerplate.git your-app-name-here
 ```
 
 2. Run npm install. Twice. One directly in the root folder (server packages) and one in the client subfolder (client packages).
