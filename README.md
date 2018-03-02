@@ -12,7 +12,7 @@ I figured using the two scaffolding tools would cut me some slack.
 This is, by no means, expected to be a solid build.
 
 ## Download, Install, Run
-1. Clone or this repository. Or [download and unzip it](https://github.com/andrewsantarin/mern-stack-app/archive/master.zip).
+1. Clone or this repository. Or [download and unzip it](https://github.com/andrewsantarin/mern-stack-app-boilerplate/archive/master.zip).
 ```sh
 git clone https://github.com/andrewsantarin/mern-stack-app.git your-app-name-here
 ```
